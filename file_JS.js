@@ -11,40 +11,43 @@ if(hamburgers >= 4 && fries >=1) {
 
 //2
 let num1 = 1000;
-let num2 = 1900;
 
-if(num1 >= 1000 && num2 <= 1900 ){
-    console.log('ok')
+if(num1 >= 1000 && num1 <= 1900 ){
+console.log('ok')
 } else {
-    console.log('cannot be bought')
+console.log('cannot be bought')
 }
 
 //3
-let num3 = 1000;
-let num4 = 1900;
-if(num3 < 1000 && num4 > 1900 ){
+let num2 = 1000;
+if(num2 < 1000 || num2 > 1900 ){
     console.log('cannot be bought')
 } else {
     console.log('you can buy')
 }
 
 //3.1
-let num5 = 1000;
-let num6 = 1900;
-if(num5 < 1000 && !num6 <= 1900 ){
+let num3 = 1901;
+if(num3 < 1000 || !(num3 <= 1900) ){
     console.log('cannot be bought')
 } else {
     console.log('you can buy')
 }
 
 //4
-let season = {
-    0: 'winter',
-    1: 'spring',
-    2: 'summer',
-    3: 'autumn'
-}
-console.log(season[3]);
+let season = 2;
+
+if (season == 0) {
+    console.log("Winter");
+  } else if (season == 1) {
+    console.log("Spring");
+  } else if (season == 2) {
+    console.log("Summer");
+  } else if (season == 3) {
+    console.log("Autumn");
+  } else {
+    console.log("There is no season");
+  }
 
 //5
 let a = 8;
